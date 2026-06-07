@@ -10,6 +10,8 @@ Implementação e comparação experimental de três algoritmos de ordenação d
 | Merge Sort | O(n log n) | O(n log n) |
 | Quick Sort | O(n log n) | O(n²) |
 
+> obs: Quick Sort possui complexidade de espaço O(n) no pior caso devido à pilha de recursão.
+
 ## Metodologia
 
 - Vetores gerados aleatoriamente com seed fixo (42) para garantir comparação justa
@@ -21,9 +23,9 @@ Implementação e comparação experimental de três algoritmos de ordenação d
 
 | Algoritmo | n=1.000 | n=10.000 | n=100.000 |
 |---|---|---|---|
-| Insertion Sort | 0,022s | 2,090s | N/C (>5 min) |
-| Merge Sort | 0,004s | 0,024s | 0,305s |
-| Quick Sort | 0,003s | 0,016s | 0,199s |
+| Insertion Sort | 0,029s | 2,712s | N/C (>5 min) |
+| Merge Sort | 0,001s | 0,018s | 0,217s |
+| Quick Sort | 0,001s | 0,012s | 0,142s |
 
 ## Como executar
 
